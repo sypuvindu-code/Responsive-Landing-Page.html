@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Startup</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Flexbox layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sections */
+.section {
+  flex: 1 1 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Colors */
+.features { background: lightblue; }
+.testimonials { background: lightgreen; }
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive */
+@media(max-width:600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Startup</h1>
+  <p>Welcome to our product</p>
+</header>
+
+<div class="container">
+  <div class="section features">
+    <h2>Features</h2>
+    <p>Fast, Easy, Reliable</p>
+  </div>
+
+  <div class="section testimonials">
+    <h2>Testimonials</h2>
+    <p>“Best service ever!”</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 My Startup</p>
+</footer>
+
+</body>
+</html>
+
+Output:
+My Startup
+Welcome to our product
+
+Features: Fast, Easy, Reliable
+Testimonials: Best service ever!
+
+© 2026 My Startup
